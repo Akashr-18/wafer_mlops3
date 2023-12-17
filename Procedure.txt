@@ -5,6 +5,14 @@ Process:
 2. Clone in the cmd prompt
 3. Add Training_Batch_Files and Prediction_Batch_Files to the folder structure.
 4. Create a data_for_dvc.py file
+    pip install dvc       pip install dvc[gdrive]
 5. Command: dvc init
 6. Command: python data_for_dvc.py
 7. git add .      git commit -m "message"       git push origin main
+8. git checkout -b dev  #Create and checkout a development branch for our development
+9. git add .      git commit -m "message"       git push origin dev
+10. ADD REMOTE STORAGE
+    -dvc remote add -d storage gdrive://<DRIVE ID>
+    -git add .dvc/config && git commit -m "Configure remote storage"
+11. PUSH THE DATA TO THE REMOTE STORAGE
+    -dvc push
