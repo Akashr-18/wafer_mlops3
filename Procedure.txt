@@ -1,0 +1,10 @@
+Env name : wafermlops
+
+Process:
+1. Create a new repository in git
+2. Clone in the cmd prompt
+3. Add Training_Batch_Files and Prediction_Batch_Files to the folder structure.
+4. Create a data_for_dvc.py file
+5. Command: dvc init
+6. Command: python data_for_dvc.py
+7. git add .      git commit -m "message"       git push origin main
